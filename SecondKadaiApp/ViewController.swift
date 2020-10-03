@@ -8,19 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
 
-        // TextField
-        @IBOutlet weak var textField: UITextField!
+    // TextField
+    @IBOutlet weak var textField: UITextField!
 
-        // 文字列保存用の変数
-        var textFieldString = ""
+    // 文字列保存用の変数
+    var textFieldString = ""
 
-        override func viewDidLoad() {
-                super.viewDidLoad()
+    override func viewDidLoad() {
+            super.viewDidLoad()
+            self.textField.delegate = self
 
-        }
-     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
        // TextFieldから文字を取得
         textFieldString = textField.text!
         self.view.endEditing(true)
