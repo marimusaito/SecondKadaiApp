@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // segueから遷移先のResultViewControllerを取得する
+        // segueから遷移先のHelloViewControllerを取得する
         let helloViewController:HelloViewController = segue.destination as! HelloViewController
-        // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
+        // 遷移先のResultViewControllerで宣言しているNameに値を代入して渡す
         helloViewController.Name = textFieldString
         
     }
