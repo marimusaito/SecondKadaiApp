@@ -28,7 +28,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="決定"/>
                                 <connections>
-                                    <action selector="disideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d20-0v-HrI"/>
                                     <segue destination="pZ1-Ki-YI2" kind="show" id="lRO-63-3QB"/>
                                 </connections>
                             </button>

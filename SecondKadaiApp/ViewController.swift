@@ -20,10 +20,11 @@ class ViewController: UIViewController {
                 super.viewDidLoad()
 
         }
-    @IBAction func disideButton(_ sender: Any) {
-        // TextFieldから文字を取得
+     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       // TextFieldから文字を取得
         textFieldString = textField.text!
-
+        self.view.endEditing(true)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
