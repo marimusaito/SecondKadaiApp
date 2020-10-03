@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     }
         
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        // TextFieldの中身をクリア
+        textField.text = ""
+
     }
 
 }

@@ -24,10 +24,13 @@ class HelloViewController: UIViewController {
         
         let HelloName = Name
         label.text = "こんにちは、 \(HelloName) さん"
-
-    }
+        
     
 
+    }
+
+    
+    
     /*
     // MARK: - Navigation
 
